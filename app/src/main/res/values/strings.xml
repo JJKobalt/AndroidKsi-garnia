@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TAS_Project</string>
+
+
+    <string-array name="page_names_array">
+        <item>Main Page</item>
+        <item>Book List</item>
+    </string-array>
+
+    <string-array name="fragments_tag_array">
+        <item>WELCOME_FRAGMENT</item>
+        <item>BOOK_DETAILS_FRAGMENT</item>
+        <item>BOOK_LIST</item>
+    </string-array>
+
+
+    <string name="source_books">http://localhost:8080/books</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="welcome">Welcome</string>
+    <string name="no_internet">no internet</string>
+    <string name="io_exception">io exception</string>
+    <string name="server_exception">server exception</string>
+    <string name="title">Title:</string>
+    <string name="authors">Authors:</string>
+    <string name="category">Category:</string>
+    <string name="description">Description:</string>
+    <string name="price">Price:</string>
+    <string name="login">Login</string>
+    <string name="login_label">Login:</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname:</string>
+    <string name="address">Address:</string>
+    <string name="not_logged">You are not logged</string>
+    <string name="book_bought">You bought a book</string>
+    <string name="book_not_bought">Failure! Book not bought</string>
+</resources>

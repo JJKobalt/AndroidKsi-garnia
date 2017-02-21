@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/text_margin"
+    android:layout_marginBottom="20dp"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example2.janja.tas_project.Fragments.BookDetailsFragment">
+
+
+            <!-- Title -->
+            <TextView
+
+                android:id="@+id/title_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_margin="15dp"
+                android:text="@string/title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/title_label"
+
+                android:text="Przykladowy tytuł"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp" />
+
+
+            <!-- Authors -->
+            <TextView
+
+                android:id="@+id/authors_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_title"
+
+
+                android:layout_margin="15dp"
+                android:text="@string/authors"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/book_authors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@id/authors_label"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/authors_label"
+
+                android:text="Autor Przykladowy  "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp"
+
+                />
+
+            <!-- Category -->
+            <TextView
+
+                android:id="@+id/category_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_authors"
+
+
+                android:layout_margin="15dp"
+                android:text="@string/category"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/book_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@id/category_label"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/category_label"
+
+                android:text="Przykladowy gatunek "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp" />
+
+            <!-- Description -->
+            <TextView
+
+                android:id="@+id/description_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_category"
+
+
+                android:layout_margin="15dp"
+                android:text="@string/description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/book_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@id/description_label"
+                android:layout_marginStart="100dp"
+
+
+                android:text="Przykladowy opis \n moze byc długi \n moze byc długi \n moze byc długi \n moze byc długi  "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp" />
+
+
+            <!-- Price -->
+            <TextView
+
+                android:id="@+id/price_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_description"
+
+
+                android:layout_margin="15dp"
+                android:text="@string/price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/book_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@id/price_label"
+                android:layout_marginBottom="50dp"
+                android:layout_toRightOf="@id/price_label"
+                android:text="00.00  "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="buy"
+
+        />
+
+</FrameLayout>

@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example2.janja.tas_project.Fragments.UserDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example2.janja.tas_project.Fragments.BookDetailsFragment">
+
+
+            <!-- Login -->
+            <TextView
+
+                android:id="@+id/login_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_margin="15dp"
+                android:text="@string/login_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/user_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/login_label"
+
+                android:text="Przykladowy login"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp" />
+
+
+            <!-- imie -->
+            <TextView
+
+                android:id="@+id/name_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_login"
+
+
+                android:layout_margin="15dp"
+                android:text="@string/name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@id/name_label"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/name_label"
+
+                android:text="Imie  "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp"
+
+                />
+
+            <!-- nazwisko -->
+            <TextView
+
+                android:id="@+id/surname_label"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+
+
+                android:layout_margin="15dp"
+                android:text="@string/surname"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/user_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@id/surname_label"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/surname_label"
+
+                android:text="Nazwisko "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="25sp" />
+
+
+            <TextView
+
+                android:id="@+id/order_date_label"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_surname"
+
+
+                android:layout_margin="15dp"
+                android:text="Order Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/order_BookId_label"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_surname"
+                android:layout_margin="15dp"
+
+                android:layout_toRightOf="@id/order_date_label"
+                android:text="Order BookId"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/orders_layout"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@id/order_date_label" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
